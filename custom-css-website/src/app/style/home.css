@@ -1,0 +1,131 @@
+/* Home Page Styles */
+.home-container {
+    min-height: 100vh;
+    background-color: #f7fafc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 48px 16px;
+  }
+  
+  .home-heading {
+    font-size: 32px;
+    color: #1e40af;
+    margin-bottom: 16px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .home-paragraph {
+    font-size: 20px;
+    color: #4a5568;
+    margin-bottom: 24px;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .home-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .home-buttons.sm-flex-row {
+    flex-direction: row;
+    gap: 24px;
+  }
+  
+  .home-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+
+  }
+  
+  .home-button-home {
+    background-color: #4a5568;
+    color: white;
+  }
+  
+  .home-button-about {
+    background-color: #3182ce;
+    color: white;
+  }
+  
+  .home-button-services {
+    background-color: #48bb78;
+    color: white;
+  }
+  
+  .home-button-contact {
+    background-color: #f56565;
+    color: white;
+  }
+  
+  .home-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .home-button-home:hover {
+    background-color: #2d3748;
+  }
+  
+  .home-button-about:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .home-button-services:hover {
+    background-color: #38a169;
+  }
+  
+  .home-button-contact:hover {
+    background-color: #e53e3e;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For mobile devices (max-width: 640px) */
+  @media (max-width: 640px) {
+    .home-heading {
+      font-size: 28px;
+    }
+  
+    .home-paragraph {
+      font-size: 18px;
+    }
+  
+    .home-buttons {
+      flex-direction: column;
+    }
+  }
+  
+  /* For tablets (641px to 1024px) */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .home-heading {
+      font-size: 30px;
+    }
+  
+    .home-paragraph {
+      font-size: 18px;
+    }
+  
+    .home-buttons {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  

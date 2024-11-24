@@ -1,0 +1,67 @@
+/* About Page Styles */
+.about-container {
+    min-height: 100vh;
+    background-color: #f7fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 48px 16px;
+  }
+  
+  .about-content {
+    padding: 24px;
+  }
+  
+  .about-heading {
+    font-size: 32px;
+    color: #1e40af;
+    margin-bottom: 16px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .about-paragraph {
+    font-size: 20px;
+    color: #4a5568;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .about-paragraph-sm {
+    font-size: 18px;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For mobile devices (max-width: 640px) */
+  @media (max-width: 640px) {
+    .about-heading {
+      font-size: 28px;
+    }
+  
+    .about-paragraph {
+      font-size: 18px;
+    }
+  }
+  
+  /* For tablets (641px to 1024px) */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .about-heading {
+      font-size: 30px;
+    }
+  
+    .about-paragraph {
+      font-size: 18px;
+    }
+  }
+  

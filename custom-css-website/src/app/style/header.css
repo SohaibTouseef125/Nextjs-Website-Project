@@ -1,0 +1,132 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #1e40af;
+  padding: 16px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-links a {
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #d1d5db;
+}
+
+/* Social Media Links */
+.navbar-social {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-social a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-social a:hover {
+  color: #d1d5db;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  background-color: #1e40af;
+  padding: 16px;
+  flex-direction: column;
+}
+
+.mobile-menu a {
+  color: white;
+  display: block;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.mobile-menu a:hover {
+  color: #d1d5db;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For mobile devices (max-width: 640px) */
+@media (max-width: 640px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    color: white;
+    height: 30px;
+    width: 30px;
+  }
+
+  .navbar-social {
+    gap: 12px;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+/* For tablets (641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .navbar-links {
+    gap: 20px;
+  }
+}

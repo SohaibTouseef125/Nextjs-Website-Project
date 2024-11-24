@@ -1,0 +1,107 @@
+/* Contact Page Styles */
+.contact-container {
+    min-height: 100vh;
+    background-color: #f7fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 48px 16px;
+  }
+  
+  .contact-content {
+    padding: 24px;
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-heading {
+    font-size: 32px;
+    color: #1e40af;
+    margin-bottom: 16px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+  }
+  
+  .contact-form button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+  }
+  
+  .contact-form button:active {
+    transform: translateY(0);
+  }
+  
+  .contact-message {
+    font-size: 18px;
+    color: #4a5568;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For mobile devices (max-width: 640px) */
+  @media (max-width: 640px) {
+    .contact-heading {
+      font-size: 28px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 14px;
+    }
+  }
+  
+  /* For tablets (641px to 1024px) */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .contact-heading {
+      font-size: 30px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 16px;
+    }
+  }
+  
